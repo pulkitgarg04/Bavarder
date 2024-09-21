@@ -16,11 +16,11 @@ function HomePage() {
                 <div>
                     <label>Enter Room ID:</label>
                     <input type="text" value={roomID} onChange={(e) => setRoomID(e.target.value)} />
-                    <button onClick={joinHandler} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Join</button>
+                    <button onClick={joinHandler}>Join</button>
                 </div>
                 <hr />
                 <div>
-                    <button onClick={() => navigate(`/room/${Math.random().toString(36).substring(7)}`)} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Create New Meeting</button>
+                    <button onClick={() => navigate(`/room/${Math.random().toString(36).substring(7)}`)}>Create New Meeting</button>
                 </div>
             </div>
         </div>
